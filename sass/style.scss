@@ -242,3 +242,52 @@ header {
 }
 
 }
+.section-about_company {
+    margin-top: 50px;
+.main_container-company {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+    background-color: #f2f0f0;
+    height: 460px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.first-column_company {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+
+    .second-bulding{
+        position: absolute;
+        bottom: -170px;
+        left: 0;
+    }
+}
+
+.third-column_company {
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h3{
+        color: #33333355;
+        font-size: 50px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    a{
+        color: #333333;
+        background-color: #ffffff;
+        width: 220px;
+        height: 70px;
+        text-align: center;
+    }
+    }
+}
