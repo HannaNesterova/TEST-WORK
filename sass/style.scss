@@ -248,7 +248,7 @@ header {
     display: flex;
     align-items: center;
     gap: 55px;
-    background-color: #f2f0f0;
+    background-color: #FBFBFB;
     height: 460px;
     justify-content: center;
     flex-wrap: wrap;
@@ -258,13 +258,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    position: relative;
-
-    .second-bulding{
-        position: absolute;
-        bottom: -170px;
-        left: 0;
-    }
+    margin-top: 55px;
 }
 
 .third-column_company {
@@ -290,4 +284,39 @@ header {
         text-align: center;
     }
     }
+}
+
+.section_tasks {
+    margin-top: 130px;
+
+    h3{
+        color: #BDBDBD;
+        font-size: 40px;
+    }
+
+.section_tasks-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column-tasks {
+    display: flex;
+    max-width: 570px;
+    align-items: center;
+    gap: 20px;
+
+    h6{
+        font-size: 120px;
+        font-family: 'Alfa Slab One', cursive;
+        color: #F2F2F2;
+    }
+
+    p{
+        font-family: 'Abel', sans-serif;
+        font-size: 16px;
+        max-width: 400px;
+    }
+}
+
 }
