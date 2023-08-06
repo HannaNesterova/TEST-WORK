@@ -684,6 +684,17 @@ header {
             height: 20px;
             z-index: 5;
         }
+    .header_burger.active::before{
+        transform: rotate(45deg);
+        top: 10px;
+    }
+    .header_burger.active::after {
+        transform: rotate(-45deg);
+        top: 10px;
+    }
+    .header_burger.active span{
+       transform: scale(0);
+    }
     .header_burger::before,
     .header_burger::after{
         content: '';
@@ -692,6 +703,7 @@ header {
         width: 100%;
         height: 2px;
         right: 0;
+        transition: all 0.3s ease 0s;
     }
     .header_burger::before{
         top: 0;
@@ -706,6 +718,7 @@ header {
         width: 100%;
         height: 2px;
         top: 9px;
+        transition: all 0.2s ease 0s;
     }
     .header_menu{
      position: relative;
@@ -713,13 +726,18 @@ header {
 .header_menu-links{
     position: fixed;
     top: 0;
-    left: 0;
+    left: -100%;
     width: 100%;
     height: 100%;
     background-color: #8D8D8D;
     padding: 150px 150px 0px 50px;
     display: flex;
     flex-direction: column;
+    transition: all 0.5s ease 0s;
+    overflow: auto;
+}
+.header_menu-links.active{
+    left: 0;
 }
 header .header_menu-links a{
     font-size: 35px;
@@ -729,5 +747,9 @@ header .header_menu-links a{
 .header_logo{
     position: relative;
     z-index: 5;
+}
+
+body.lock{
+    overflow: hidden;
 }
 }
