@@ -461,3 +461,68 @@ a:hover {
     border-radius: 20px;
 }
 }
+
+footer{
+    margin-top: 120px;
+    background-color: #2C2C2C;
+    padding: 50px 0px;
+    
+    .footer_container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .footer-logo img{
+        width: 100px;
+    }
+
+    .footer_column{
+        display: flex;
+        flex-direction: column;
+
+        p{
+            color: #ffffff;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        a{
+            color: #ffffff;
+            font-size: 14px;
+        }
+        a:hover {
+            color: #8D8D8D
+        }
+
+        span{
+            color: #ffffff;
+            font-size: 14px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+    }
+    .socialMedia{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        a{
+            font-size: 20px;
+            transition: all 1s ease 0s;
+        }
+        a:hover{
+            font-size: 40px;
+        }
+    }
+    hr{
+        margin: 35px 0px;
+        height: 1px;
+        background-color: #8D8D8D;
+    }
+    h6{
+        color: #C8C8C880;
+        opacity: 0.5;
+        text-align: center;
+    }
+}
