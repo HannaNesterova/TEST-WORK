@@ -548,3 +548,109 @@ footer{
         text-align: center;
     }
 }
+
+@media all and (max-width: 1350px){
+    .main_section .main_section-container{
+        margin-top: 100px;
+    }
+    .section_img{
+        width: 600px;
+    }
+    .section-about_company .main_container-company{
+        flex-wrap: nowrap;
+    }
+    .column-project{
+        max-width: 1100px;
+    }
+}
+@media all and (max-width: 1200px){
+    .section_img {
+        max-width: 500px;
+        }
+    .section-about_company .third-column_company h3{
+        font-size: 30px;
+    }
+    .section-about_company .third-column_company p {
+        font-size: 14px;
+    }
+    .column-project {
+        max-width: 1000px;
+    }
+    .img-column{
+        width: 400px;
+    }
+    .section_projects .hidden-text p{
+        font-size: 25px;
+    }
+    .img-form{
+        width: 500px;
+    }
+}
+@media all and (max-width: 1120px){
+    .column_img{
+        width: 350px;
+        height: 200px;
+    }
+    .img{
+        height: 200px;
+        width: 170px;
+    }
+}
+@media all and (max-width: 1090px){
+.section_img {
+        max-width: 462px;
+    }
+.section-about_company .first-column_company{
+    width: 180px;
+}
+.section-about_company .third-column_company p{
+    padding: 7px;
+}
+.section_projects .column-project {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+}
+.img-form {
+    width: 405px;
+}
+}
+@media all and (max-width: 1000px){
+.main_section .project-section,
+.main_section .home-section {
+    font-size: 60px;
+}
+.second-column_company img{
+    width: 200px;
+}
+.section-about_company .third-column_company p {
+    font-size: 12px;
+}
+.section_tasks .column-tasks p {
+    font-size: 14px;
+}
+.section_tasks h3,
+.section_projects h3,
+.section_conection h3{
+    font-size: 30px;
+}
+}
+
+@media all and (max-width: 970px) {
+header .header_menu-links a{
+        font-size: 14px;
+    }
+header .logo_name{
+    font-size: 12px;
+}
+.section_img {
+    max-width: 407px;
+}
+.container {
+    margin: 0px 48px;
+}
+}
