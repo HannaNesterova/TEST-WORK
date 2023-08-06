@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Alfa+Slab+One&family=Cabin:wght@400;500;700&display=swap"
     rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -20,16 +21,18 @@
                     <p class="logo_name">DIGITAL PROJECT</p>
                 </div>
                 <ul class="header_menu-links">
-                    <li><a href="#">ГЛАВНАЯ</a></li>
-                    <li><a href="#">ГАЛЕРЕЯ</a></li>
-                    <li><a href="#">ПРОЕКТЫ</a></li>
-                    <li><a href="#">СЕРТИФИКАТЫ</a></li>
-                    <li><a href="#">КОНТАКТЫ</a></li>
+                    <li><a href="#home">ГЛАВНАЯ</a></li>
+                    <li><a href="#galery">ГАЛЕРЕЯ</a></li>
+                    <li><a href="#projects">ПРОЕКТЫ</a></li>
+                    <li><a href="#task">СЕРТИФИКАТЫ</a></li>
+                    <li><a href="#contacts">КОНТАКТЫ</a></li>
                 </ul>
             </div>
         </div>
     </header>
-    <section class="main_section">
+    <section class="main_section" id="home" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
         <div class="container">
             <div class="main_section-container">
                 <div class="main_section-pretitle">
@@ -38,8 +41,8 @@
                         <p class="home-section">HOME</p>
                     </div>
                     <div class="main_section-arrows">
-                        <a href="#" class="arrow-left _icon-arrow-left">Previous Page</a>
-                        <a href="#" class="arrow-right _icon-arrow-right">Previous Page</a>
+                        <a href="#" class="arrow-left _icon-arrow-left"></a>
+                        <a href="#" class="arrow-right _icon-arrow-right"></a>
                     </div>
                     <div class="main_section-numbers">
                         <p>01 / 02</p>
@@ -57,7 +60,9 @@
         </div>
     </section>
 
-    <section class="section-about_company">
+    <section class="section-about_company" id="galery" data-aos="fade-right"
+     data-aos-offset="500"
+     data-aos-easing="ease-in-sine">
         <div class="container">
             <div class="main_container-company">
                 <div class="first-column_company">
@@ -73,13 +78,15 @@
                     dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
                     book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
                     unchanged.</p>
-                    <a href="#">ЧИТАТЬ -></a>
+                    <a href="#">ЧИТАТЬ</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section_tasks">
+    <section class="section_tasks" id="task" data-aos="fade-right"
+     data-aos-offset="500"
+     data-aos-easing="ease-in-sine">
         <div class="container">
             <h3>Основные задачи</h3>
             <div class="section_tasks-container">
@@ -96,7 +103,9 @@
         </div>
     </section>
 
-    <section class="section_projects">
+    <section class="section_projects" id="projects" data-aos="fade-right"
+     data-aos-offset="500"
+     data-aos-easing="ease-in-sine">
         <div class="container">
             <h3>Наши проекты</h3>
             <div class="main_container-projects">
@@ -122,7 +131,9 @@
         </div>
     </section>
 
-    <section class="section_conection">
+    <section class="section_conection" id="contacts" data-aos="fade-right"
+     data-aos-offset="500"
+     data-aos-easing="ease-in-sine">
         <div class="container">
             <h3>Связаться с нами</h3>
         <div class="section_conection-contauner">
@@ -146,7 +157,9 @@
         </div>
     </section>
 
-    <footer>
+    <footer data-aos="fade-right"
+     data-aos-offset="500"
+     data-aos-easing="ease-in-sine">
         <div class="container">
             <div class="footer_container">
                 <div class="footer-logo">
@@ -196,5 +209,9 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

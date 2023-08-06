@@ -40,6 +40,7 @@ body {
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
 }
 
 input,
@@ -100,6 +101,15 @@ body {
 }
 
 header {
+    position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        /* Replace with your header background color */
+        z-index: 100;
+        /* Set an appropriate z-index to ensure the header is above other elements */
+        /* Add other styles if needed */
     margin-bottom: 30px;
     .header_menu {
         display: flex;
@@ -195,10 +205,15 @@ header {
     background-color: #F2F2F2;
     padding: 12px;
     border: 1px solid rgba(128, 128, 128, 0.65);
-    color: rgba(128, 128, 128, 0.829);;
+    color: rgba(128, 128, 128, 0.829);
+    transition: all 1s ease 0s;
+}
+.arrow-left:hover{
+    background-color: #b5b5b5a3;
+    color: #ffffff;
+    border-radius: 15px;
 }
 
-._icon-arrow-left {}
 
 .arrow-right {
     font-size: 18px;
@@ -207,10 +222,17 @@ header {
     border: 1px solid rgba(128, 128, 128, 0.65);
     color: rgba(128, 128, 128, 0.829);
     margin-left: 10px;
+    transition: all 1s ease 0s;
+}
+.arrow-right:hover {
+    background-color: #b5b5b5a3;
+    color: #ffffff;
+    border-radius: 15px;
 }
 
 ._icon-arrow-right {
     margin-left: 10px;
+    transition: all 1s ease 0s;
 }
 
 .main_section-numbers {
